@@ -32,7 +32,7 @@ It’s designed to help teams stay organized, plan projects, and collaborate eff
 |:------|:------------|
 | **Backend** | Laravel 12 |
 | **Frontend** | Blade, Bootstrap 5, Boxicons |
-| **Database** | MySQL |
+| **Database** | SQLite |
 | **Build Tool** | Vite |
 | **Version Control** | Git & GitHub |
 | **Testing** | PHPUnit / Laravel Test |
