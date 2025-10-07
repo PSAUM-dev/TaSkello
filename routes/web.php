@@ -3,4 +3,5 @@
 use App\Http\Controllers\TaskController;
 use Illuminate\Support\Facades\Route;
 
-Route::resource('/', TaskController::class);
+Route::get("/", fn () => view('home')) -> name('home');
+Route::resource('/tasks', TaskController::class);
