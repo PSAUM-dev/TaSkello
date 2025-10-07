@@ -31,7 +31,7 @@ It’s designed to help teams stay organized, plan projects, and collaborate eff
 | Layer | Technology |
 |:------|:------------|
 | **Backend** | Laravel 12 |
-| **Frontend** | Blade, Bootstrap 5, Boxicons |
+| **Frontend** | Blade, Bootstrap 5, Boxicons bootstrap icons |
 | **Database** | SQLite |
 | **Build Tool** | Vite |
 | **Version Control** | Git & GitHub |
