@@ -5,10 +5,8 @@
         </div>
 
         <div class="d-flex align-items-center">
-            <a href="#" class="btn btn-outline-secondary d-flex align-items-center me-3">
-                <box-icon name="plus" color="gray"></box-icon>
-                <span>Nouvelle tâche</span>
-            </a>
+            <x-new-task-button />
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
                 aria-label="Toggle navigation">

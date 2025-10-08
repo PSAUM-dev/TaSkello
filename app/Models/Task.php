@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Task extends Model
 {
     use HasFactory;
-    protected $fillable = ['name', 'description', 'created_at'];
+    protected $fillable = ['name', 'description', 'user_id', 'created_at'];
 
     public $timestamps = false;
 
