@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Task;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -12,13 +13,11 @@ class TaskController extends Controller
      */
     public function index()
     {
-        $users = User::orderBy("id","desc")
-            ->with('tasks')
+        $tasks = Task::orderBy("created_at","desc")
+            -> limit(4)
             ->get();
 
-       //dd($users);
-
-        return view('task.index');
+        return view('task.index', ['tasks' => $tasks]);
     }
 
     /**
