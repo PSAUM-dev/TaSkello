@@ -1,17 +1,15 @@
-@props(['task' => 0])
-
 <x-base-layout>
 
-    @if ($task == 1)
+    @if ($tasks)
 
         <div class="container">
             <div class="row mt-xl-4">
 
-                @for ($i = 0; $i < 4; $i++)
-
-                    <x-task-item />
-
-                @endfor
+                @foreach ($tasks as $task)
+                    <div class="col-12 d-flex col-xl-3 mt-3 mt-xl-0">
+                        <x-task-item :$task />
+                    </div>
+                @endforeach
 
             </div>
         </div>
@@ -32,5 +30,6 @@
         </div>
 
     @endif
+  
 
 </x-base-layout>
