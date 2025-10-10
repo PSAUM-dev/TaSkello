@@ -13,11 +13,7 @@ class TaskController extends Controller
      */
     public function index()
     {
-        $tasks = Task::orderBy("created_at","desc")
-            -> limit(4)
-            ->get();
-
-        return view('task.index', ['tasks' => $tasks]);
+        return view('tasks.index');
     }
 
     /**

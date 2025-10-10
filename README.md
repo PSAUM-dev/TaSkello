@@ -127,4 +127,4 @@ git branch -d feature/your-feature-name
 - Test before submitting.
 
 
-<i><b>Built with ❤️ by the TaSkello community.</b></i>
+<i><b>Built with ❤️ by me^^ && the TaSkello community.</b></i>
