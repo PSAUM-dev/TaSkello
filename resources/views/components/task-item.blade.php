@@ -4,9 +4,9 @@
             <p class="h6 card-title">{{ $task->name }}</p>
 
             <div class="dropdown">
-                <button class="btn border-0 btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a href="#" class="link-secondary" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="bi bi-three-dots"></i>
-                </button>
+                </a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Consulter</a></li>
                     <li><a class="dropdown-item" href="#">Modifier</a></li>

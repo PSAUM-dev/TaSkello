@@ -1,9 +1,9 @@
 <x-base-layout>
 
     <div class="container mt-4">
-        <div class="row justify-content-start">
+        <div class="row justify-content-center">
 
-            <div class="col-12 col-xl-8">
+            <div class="col-12 col-xl-10">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="mb-4">Tâches principales (<small class="text-muted h6">{{ count($tasks) }}</small>)</h5>
