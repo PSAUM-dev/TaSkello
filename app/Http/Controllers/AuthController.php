@@ -22,7 +22,7 @@ class AuthController extends Controller
 
         $validatedData = $request->validate([
             "email"=> "required|email",
-            "password"=> "required|string|min:6"
+            "password"=> "required|string"
         ]);
 
         if (Auth::attempt($validatedData, $request->boolean('remember'))) {
@@ -30,7 +30,7 @@ class AuthController extends Controller
             return redirect()->intended(route('dashboard'));
         }
 
-        return redirect()->back()->with('error', 'auth');
+        return redirect()->back()->with('error', 'auth.error');
 
     }
 
@@ -45,8 +45,11 @@ class AuthController extends Controller
 
         $validatedData = $request->validate([
             'name'=> 'required|string|max:255',
-            'email'=> 'required|email',
+            'email'=> 'required|email|unique:users',
             'password'=> 'required|confirmed|min:6'
+        ], [
+            'password.confirmed' => 'Le champ de confirmation ne correspond pas au mot de passe',
+            'email.unique' => 'Cette addresse mail existe déjà'
         ]);
         
         $newUser = User::create([
