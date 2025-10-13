@@ -6,6 +6,6 @@
         {{ $slot }}
     </main>
 
-    <x-footer />
+    <div class="mt-4"><x-footer /></div>
 
 </x-app-layout>
