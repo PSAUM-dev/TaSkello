@@ -5,12 +5,12 @@
     <div class="dropdown-menu shadow  mt-5" style="width: 250px;">
             
         <div class="p-3">
-            <p class="h6 p-0 m-0">Ike Dominique</p>
-            <p class="h6 text-muted">Développeur Fullstack</p>
+            <p class="h6 p-0 m-0">{{ Auth::user()->name }}</p>
+            <p class="fs-6 text-muted">Développeur Fullstack</p>
 
             <hr />
 
-            <p class="text-sm">
+            <p class="fs-6">
                 <a href="#" class="btn btn-outline-secondary border-0 rounded-0 col-12 d-flex align-items-center justify-content-start">
                     <i class="bi bi-person"></i>
                     <span class="ms-2 text-light">Mon profil</span>
@@ -24,10 +24,15 @@
 
             <hr />
 
-                <a href="#" class="btn btn-outline-secondary border-0 rounded-0 col-12 d-flex align-items-center justify-content-start">
-                    <i class="bi bi-box-arrow-right"></i>
-                    <span class="ms-2 text-light">Se déconnecter</span>
-                </a>
+                <form method="post" action="{{ route('logout') }}">
+                    @csrf
+                    @method('POST')
+
+                    <button type="submit" class="btn btn-outline-secondary border-0 rounded-0 col-12 d-flex align-items-center justify-content-start">
+                        <i class="bi bi-box-arrow-right"></i>
+                        <span class="ms-2 text-light">Se déconnecter</span>
+                    </button>
+                </form>
 
         </div>
 

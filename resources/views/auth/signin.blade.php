@@ -6,6 +6,7 @@
             <div class="col-12 col-xl-5 mt-4 mt-xl-5">
                 <h3>
                     <a class="link-light link-underline-opacity-0" href="{{ route('home') }}">TaSkello</a>
+                    <span class="fs-6 text-muted">Connexion</span>
                 </h3>
                 <p>Veuillez vous connecter avec vos identifiants</p>
                 <div class="card border-1 mt-2">
@@ -43,6 +44,6 @@
         </div>
     </div>
 
-    <x-footer />
+    <x-footer class="fixed-bottom"/>
 
 </x-app-layout>
