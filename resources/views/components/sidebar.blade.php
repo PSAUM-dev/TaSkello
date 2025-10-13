@@ -22,13 +22,9 @@
 
                 </ul>
 
-                <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Chercher une tâche"
-                        aria-label="Search" />
-                    <button class="btn border-0 btn-outline-secondary" type="submit">
-                        <box-icon name="search" color="white"></box-icon>
-                    </button>
-                </form>
+                <div class="mt-4">
+                    <x-search-bar />
+                </div>
 
             </div>
 
