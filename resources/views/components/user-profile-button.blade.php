@@ -3,7 +3,7 @@
         <i class="bi bi-person h4"></i>
     </a>
     <div class="dropdown-menu shadow  mt-5" style="width: 250px;">
-
+            
         <div class="p-3">
             <p class="h6 p-0 m-0">Ike Dominique</p>
             <p class="h6 text-muted">Développeur Fullstack</p>
@@ -30,7 +30,6 @@
                 </a>
 
         </div>
-
 
     </div>
 </div>
