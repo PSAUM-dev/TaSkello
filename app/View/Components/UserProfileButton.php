@@ -1,19 +1,22 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components; 
 
+use Auth;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class BaseLayout extends Component
+class UserProfileButton extends Component
 {
     /**
      * Create a new component instance.
      */
+    public $isUserConnected;
+
     public function __construct()
     {
-        //
+        $this->isUserConnected = Auth::user() != null;
     }
 
     /**
@@ -21,6 +24,6 @@ class BaseLayout extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('layouts.base-layout');
+        return view('components.user-profile-button');
     }
 }
