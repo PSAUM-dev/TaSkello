@@ -9,13 +9,7 @@
 </head>
 <body class="bg-dark" data-bs-theme="dark">
 
-    <x-header />
-
-    <main>
-        {{ $slot }}
-    </main>
-    
-    <x-footer />
+    {{ $slot }}
 
 </body>
 </html>

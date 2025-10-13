@@ -16,6 +16,7 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained('users');
             $table->string('name');
             $table->string('description')->nullable();
+            $table->string('status')->default('not_started');
             $table->timestamp('created_at')->nullable();
         });
     }

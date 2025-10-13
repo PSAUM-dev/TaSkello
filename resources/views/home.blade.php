@@ -17,14 +17,8 @@
                     </p>
 
                     <div>
-                        <a href="#" class="btn btn-outline-secondary">
-                            <i class="bi bi-github"></i>
-                            <span>Découvrir sur Github</span>
-                        </a>
-                        <a href="#" class="btn btn-dark">
-                            <i class="bi bi-heart text-danger-emphasis"></i>
-                            <span>Soutenir le projet</span>
-                        </a>
+                        <x-github-button />
+                        <x-donate-button />                        
                     </div>
                 </div>
 
