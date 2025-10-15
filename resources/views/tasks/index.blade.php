@@ -38,7 +38,7 @@
                                     <td><input class="form-check-input" type="checkbox" name="" id=""></td>
 
                                     <td>
-                                        <a href="#" class="link-light link-offset-3 link-underline-opacity-0 link-underline-opacity-50-hover">
+                                        <a href="{{ route('tasks.show', $task) }}" class="link-light link-offset-3 link-underline-opacity-0 link-underline-opacity-50-hover">
                                             {{ $task->name }}
                                         </a>
                                     </td>

@@ -45,9 +45,9 @@ class TaskController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Task $task)
     {
-        //
+        return view('tasks.show', ['task'=> $task]);
     }
 
     /**
