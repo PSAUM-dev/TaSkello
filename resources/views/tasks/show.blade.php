@@ -8,7 +8,7 @@
                     <div class="card-body p-4">
                         <div class="d-flex  justify-content-between">
                             <h4>{{ $task->name }}</h4>
-                            
+
                             <div class="">
                                 
                                 <a href="#" class="btn btn-outline-secondary">

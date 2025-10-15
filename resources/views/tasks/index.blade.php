@@ -6,7 +6,10 @@
             <div class="col-12 col-xl-10">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="mb-4">Tâches principales (<small class="text-muted h6">{{ count($tasks) }}</small>)</h5>
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <p class="mb-4 h5">Tâches principales (<small class="text-muted h6">{{ count($tasks) }}</small>)</p>
+                            <x-new-task-button />
+                        </div>
 
                         <table class="table border-dark table-dark table-hover">
 
