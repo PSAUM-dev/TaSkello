@@ -9,16 +9,13 @@
                         <div class="d-flex  justify-content-between">
                             <h4>{{ $task->name }}</h4>
 
-                            <div class="">
+                            <div class="d-flex align-items-center">
                                 
-                                <a href="#" class="btn btn-outline-secondary">
+                                <a href="#" class="btn btn-outline-secondary me-2">
                                     <i class="bi bi-pencil"></i>
                                 </a>
 
-                                <a href="#" class="btn btn-outline-danger">
-                                    <i class="bi bi-trash"></i>
-                                </a>
-
+                                <x-task-delete-button id="{{ $task->id }}" />
                             </div>
 
                         </div>
