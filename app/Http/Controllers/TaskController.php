@@ -73,6 +73,6 @@ class TaskController extends Controller
     {
         Task::destroy($id);
 
-        return redirect() -> back() -> with ('success', 'task.deleted');
+        return redirect() -> route('tasks.index') -> with ('success', 'task.deleted');
     }
 }
