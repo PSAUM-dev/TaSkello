@@ -12,7 +12,7 @@ class TaskController extends Controller
      * Display a listing of the resource.
      */
     public function index()
-    {
+    { 
         $tasks = Task::orderBy("created_at","desc")->get();
         return view('tasks.index', ['tasks' => $tasks]);
     }
@@ -71,6 +71,8 @@ class TaskController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        Task::destroy($id);
+
+        return redirect() -> back() -> with ('success', 'task.deleted');
     }
 }
