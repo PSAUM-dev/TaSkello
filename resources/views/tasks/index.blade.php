@@ -59,12 +59,7 @@
                                         </td>
                                         <td class="d-flex align-items-center justify-content-between">
                                             <a href="#"><i class="bi bi-pencil text-muted"></i></a>
-                                            <form action="{{ route('tasks.destroy', $task->id) }}" method="post">
-                                                @csrf
-                                                @method('DELETE')
-                                                <button type="submit" class="btn btn-outline-danger"><i
-                                                        class="bi bi-trash"></i></button>
-                                            </form>
+                                            <x-task-delete-button id="{{ $task->id }}" />
                                         </td>
                                     </tr>
                                 @endforeach
