@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Taskello</title>
 </head>
-<body class="bg-dark" data-bs-theme="dark">
+<body class="bg-dark d-flex flex-column min-vh-100" data-bs-theme="dark">
 
     {{ $slot }}
 

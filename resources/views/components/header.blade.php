@@ -20,6 +20,7 @@
 
                 <x-search-bar />
 
+                <x-my-tasks-button />
                 <x-my-projects-button />
                 <x-new-task-dropdown />
 
