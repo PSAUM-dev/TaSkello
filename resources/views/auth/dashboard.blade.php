@@ -58,7 +58,7 @@
 
         <div class="d-flex justify-content-center align-items-center h-90">
             <div class="col-11 col-xl-6 p-4 border-1 border-secondary text-center">
-                <h3>Hello Dominique</h3>
+                <h3>Hello <a class="link-secondary link-offset-1" href="#">{{ Auth::user()->name }}</a>,</h3>
                 <p>Commençons à organiser vos tâches sur TaSkello</p>
                 <div class="d-flex justify-content-center">
                     <x-new-task-button text="Commencer une nouvelle tâche" />

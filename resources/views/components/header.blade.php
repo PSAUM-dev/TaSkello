@@ -3,26 +3,30 @@
         <div class="d-flex align-items-center">
 
             @if ($isUserConnected)
-            <button class="navbar-toggler me-3" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                aria-label="Toggle navigation">
-                <span class="text-white"><box-icon name="menu" color="white"></box-icon></span>
-            </button>
+                <button class="navbar-toggler me-3" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="text-white"><box-icon name="menu" color="white"></box-icon></span>
+                </button>
             @endif
 
             <a class="navbar-brand" href="{{ route('home') }}">TaSkello</a>
         </div>
 
 
-        <div class="d-flex">
+        <div class="d-flex mt-xl-0 mt-2">
 
             @if ($isUserConnected)
 
-                <x-search-bar />
+                <div class="d-none d-xl-flex">
+                    <x-search-bar />
 
-                <x-my-tasks-button />
-                <x-my-projects-button />
-                <x-new-task-dropdown />
+
+                    <x-my-tasks-button />
+                    <x-my-projects-button />
+                    <x-new-task-dropdown />
+
+                </div>
 
                 <div class="border-left border-1 ml-2 me-2 opacity-25"></div>
 
