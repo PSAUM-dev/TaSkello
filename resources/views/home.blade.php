@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-12 col-xl-12">
 
-                <div class="p-10 col-12 col-xl-9">
+                <div class="p-2 p-md-5 col-12 col-xl-9">
                     <p class="h3">Organisez vos tâches, gagnez en clarté — avec TaSkello.</p>
                     <p>Un gestionnaire de tâches simple, gratuit et open source, pensé pour les équipes modernes.</p>
 

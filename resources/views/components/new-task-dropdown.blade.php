@@ -15,7 +15,7 @@
             <span class="text-light">Nouveau projet</span>
         </a></li>
 
-        <li><a class="dropdown-item" href="#">
+        <li><a class="dropdown-item" href="{{ route('tasks.create') }}">
             <i class="bi bi-clipboard text-muted me-2"></i>
             <span class="text-light">Nouvelle tâche</span>
         </a></li>

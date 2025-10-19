@@ -12,7 +12,7 @@ class TaskController extends Controller
      * Display a listing of the resource.
      */
     public function index()
-    {
+    { 
         $tasks = Task::orderBy("created_at","desc")->get();
         return view('tasks.index', ['tasks' => $tasks]);
     }
@@ -22,7 +22,7 @@ class TaskController extends Controller
      */
     public function create()
     {
-        //
+        return view('tasks.create');
     }
 
     /**
@@ -45,9 +45,9 @@ class TaskController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Task $task)
     {
-        //
+        return view('tasks.show', ['task'=> $task]);
     }
 
     /**
@@ -71,6 +71,8 @@ class TaskController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        Task::destroy($id);
+
+        return redirect() -> route('tasks.index') -> with ('success', 'task.deleted');
     }
 }
