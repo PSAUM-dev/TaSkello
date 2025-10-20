@@ -16,7 +16,7 @@
                     <span class="ms-2 text-light">Mon profil</span>
                 </a>
 
-                <a href="#" class="btn btn-outline-secondary border-0 rounded-0 col-12 d-flex align-items-center justify-content-start">
+                <a href="{{ route('dashboard') }}" class="btn btn-outline-secondary border-0 rounded-0 col-12 d-flex align-items-center justify-content-start">
                     <i class="bi bi-kanban"></i>
                     <span class="ms-2 text-light">Dashboard</span>
                 </a>
