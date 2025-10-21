@@ -2,7 +2,7 @@
     <div class="card-body">
         <div class="d-flex justify-content-between">
             <p class="h6 card-title">
-                <a class="link-light link-underline-opacity-0" href="{{ route('tasks.show', $task) }}">
+                <a class="link-light link-underline-opacity-0" href="{{ route('tasks.show', $task->hashid) }}">
                     {{ $task->name }}
                 </a>
             </p>
@@ -12,7 +12,7 @@
                     <i class="bi bi-three-dots"></i>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Consulter</a></li>
+                    <li><a class="dropdown-item" href="{{ route('tasks.show', $task->hashid) }}">Consulter</a></li>
                     <li><a class="dropdown-item" href="#">Modifier</a></li>
                     <hr />
 

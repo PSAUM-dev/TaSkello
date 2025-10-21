@@ -48,7 +48,7 @@
                                         <td><input class="form-check-input" type="checkbox" name="" id=""></td>
 
                                         <td>
-                                            <a href="{{ route('tasks.show', $task) }}"
+                                            <a href="{{ route('tasks.show', $task->hashid) }}"
                                                 class="link-light link-offset-3 link-underline-opacity-0 link-underline-opacity-50-hover">
                                                 {{ $task->name }}
                                             </a>

@@ -11,12 +11,12 @@
             <hr />
 
             <p class="fs-6">
-                <a href="#" class="btn btn-outline-secondary border-0 rounded-0 col-12 d-flex align-items-center justify-content-start">
+                <a href="#" class="btn btn-outline-secondary border-0 rounded col-12 d-flex align-items-center justify-content-start">
                     <i class="bi bi-person"></i>
                     <span class="ms-2 text-light">Mon profil</span>
                 </a>
 
-                <a href="{{ route('dashboard') }}" class="btn btn-outline-secondary border-0 rounded-0 col-12 d-flex align-items-center justify-content-start">
+                <a href="{{ route('dashboard') }}" class="btn btn-outline-secondary border-0 rounded col-12 d-flex align-items-center justify-content-start">
                     <i class="bi bi-kanban"></i>
                     <span class="ms-2 text-light">Dashboard</span>
                 </a>
@@ -28,7 +28,7 @@
                     @csrf
                     @method('POST')
 
-                    <button type="submit" class="btn btn-outline-secondary border-0 rounded-0 col-12 d-flex align-items-center justify-content-start">
+                    <button type="submit" class="btn btn-outline-secondary border-0 rounded col-12 d-flex align-items-center justify-content-start">
                         <i class="bi bi-box-arrow-right"></i>
                         <span class="ms-2 text-light">Se déconnecter</span>
                     </button>
