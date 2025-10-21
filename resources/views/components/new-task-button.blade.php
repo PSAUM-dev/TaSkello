@@ -60,10 +60,17 @@
                                 </button>
                             </li>
                             <li class="mt-2">
+                                <button type="submit" name="open_task" value="1" class="ms-2 btn btn-sm btn-outline px-4 border-0
+                                d-flex align-items-center">
+                                    <i class="bi bi-box-arrow-up-right fs-5 text-secondary"></i>
+                                    <span class="ms-2">Enregistrer & ouvrir</span>
+                                </button>
+                            </li>
+                            <li class="mt-2">
                                 <button type="submit" class="ms-2 btn btn-sm btn-outline px-4 border-0
                                 d-flex align-items-center">
                                     <i class="bi bi-file-earmark-plus fs-5 text-secondary"></i>
-                                    <span class="ms-2">Enregistrer & Nouvelle tâche</span>
+                                    <span class="ms-2">Enregistrer & nouvelle tâche</span>
                                 </button>
                             </li>
 
